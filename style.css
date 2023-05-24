@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  background-color: transparent;
+}
+
+#paymentSelection, #selectionMain {
+  border-right: none;
+  border-left: none;
+  overflow: auto;
+  height: 100%;
+}
+
+#paymentSelection .paymentHeader:first-child {
+  border-top: none;
+}
+
+#hppBody {
+  display: flex;
+  height: 100%;
+  font-size: 0.875rem;
+}
+
+#selectionForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-top: auto;
+}
+
+.buttonHolder .left, .buttonHolder .right {
+  max-width: none;
+  height: 4rem;
+  flex: 0 1 50%;
+  margin: 0;
+  width: 100%;
+}
+
+#addFdkForm {
+  margin: 0;
+}
+
+.buttonHolder .commandButton, #doneForm .cancelButton {
+  max-width: none;
+  height: 4rem;
+  flex: 0 1 50%;
+  margin: 0;
+  display: flex;
+  line-height: initial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.28572;
+  letter-spacing: 0.16px;
+  position: relative;
+  display: inline-flex;
+  min-height: 3rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(0.875rem - 3px) 63px calc(0.875rem - 3px) 15px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin: 0;
+  border-radius: 0;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+  width: 100%;
+  border: 0;
+}
+
+.buttonHolder #continueButton, .dialogBox .saveButton, .commandButton.continue {
+  background-color: #0f62fe;
+  color: #ffffff;
+}
+
+.buttonHolder #continueButton:hover, .dialogBox .saveButton:hover, .commandButton.continue {
+  background-color: #0353e9;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.buttonHolder .cancelButton,  #doneForm .cancelButton {
+  background-color: #393939 !important;
+  color: #ffffff !important;
+}
+
+.buttonHolder .cancelButton:hover,  #doneForm .cancelButton:hover {
+  background-color: #4c4c4c;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dialogBox .buttonHolder {
+  padding: 0;
+}
